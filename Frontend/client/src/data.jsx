@@ -7,7 +7,7 @@ const data = {
             image:'/images/008.jpg',
             price: 439,
             brand: 'vevi culture',
-            rating: '3.2',
+            rating: '1.2',
             numReviews: 6,
             description: 'check the material '
         },
@@ -18,7 +18,7 @@ const data = {
              image:'/images/292.jpg',
             price: 549,
             brand: 'vevi culture',
-            rating: '3.2',
+            rating: '0.2',
             numReviews: 6,
             description: 'check the material '
         },
@@ -51,7 +51,7 @@ const data = {
             image:'/images/1895.jpg',
             price: 54,
             brand: 'vevi culture',
-            rating: '3.2',
+            rating: '2.2',
             numReviews: 6,
             description: 'check the material '
         },
@@ -62,7 +62,7 @@ const data = {
             image:'/images/post-4.jpg',
             price: 49,
             brand: 'vevi culture',
-            rating: '3.2',
+            rating: '1.0',
             numReviews: 6,
             description: 'check the material '
         }

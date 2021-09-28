@@ -1,7 +1,7 @@
 html{
   font-size: 62.5%;
   box-sizing: border-box;
-  background-color: darkmagenta;
+  background-color:#CAB8FF;
 }
 
 body{
@@ -59,7 +59,14 @@ a {
 a:hover {
   color: ghostwhite;
 }
-
+ul{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+li {
+  margin-top: 1rem;
+}
 header a {
   color: #B2AB8C;
   padding: 1rem;
@@ -79,7 +86,16 @@ a.brand {
 .row.center {
   justify-content: center;
 }
+.row.top{
+  align-items: flex-start;
+}
 
+.col-1 {
+  flex: 1 1 25rem;
+}
+.col-2 {
+  flex: 2 1 50rem;
+}
 .card {
   border: 0.1rem;
   background-color: cornsilk;
@@ -100,7 +116,13 @@ img.medium {
 
 .price {
   font-size: 2rem;
-
 }
 
+.rating span {
+  color: gold;
+  margin: 0.1rem;
+}
+.rating span:last-child {
+  color: #293B5F;
+}
 

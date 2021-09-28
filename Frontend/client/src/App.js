@@ -1,43 +1,32 @@
-import data from './data'
+import { BrowserRouter, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import ProductPage from './pages/ProductPage';
+// import Header from './Header';
+import Footer from './Footer';
+
+
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="grid-container">
-      <header className="row">
-        <div>
-          <a href="/" className="brand">Eishop</a>
-        </div>
-        <div>
-          <a href="/cart">Cart</a>
-          <a href="/login">login</a>
-        </div>
-      </header>
+    <header className="row">
+                <div>
+                    <a href="/" className="brand">TopStore</a>
+                </div>
+                <div>
+                    <a href="/cart">Cart</a>
+                    <a href="/login">login</a>
+                </div>
+            </header>
+      {/* <Header /> */}
       <main>
-        <div className="row center">
-          {data.Products.map((product => (
-            <div key={product._id} className="card">
-            <a href={`/product/${product._id}`}>
-              <img src={product.image} className="medium" alt={product.name} />
-            </a>
-            <div className="card-body">
-              <a href ={`/product/${product._id}`} className="product-body"></a> 
-              <h2>{product.name}</h2>
-              <div className="rating">
-                <span><i className="fa fa-star"></i></span>
-                <span><i className="fa fa-star"></i></span>
-                <span><i className="fa fa-star"></i></span>
-                <span><i className="fa fa-star"></i></span>
-                <span><i className="fa fa-star"></i></span>
-                <span><i className="fa fa-star"></i></span>
-                <div className="price">#{product.price}</div>
-              </div>
-            </div>
-          </div>
-          )))}
-        </div>
+        <Route path='/' exact component={Home} />
+        <Route path='/product/:id' component={ProductPage} />
       </main>
-      <footer className="row center">Copyright All right reserved</footer>
+      <Footer />
   </div>
+    </BrowserRouter>
   );
 }
 
