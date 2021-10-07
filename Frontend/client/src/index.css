@@ -40,18 +40,15 @@ header{
   grid-area: header;
   background-color:#293B5F;
 }
+header a {
+  color: #B2AB8C;
+  padding: 1rem;
+}
 
 main {
   grid-area: main;
   padding: 1rem;
 }
-
-footer {
-  grid-area: footer;
-  background-color: #B2AB8C;
-  color: #BF1363;
-}
-
 a {
   text-decoration: none;
 }
@@ -67,10 +64,7 @@ ul{
 li {
   margin-top: 1rem;
 }
-header a {
-  color: #B2AB8C;
-  padding: 1rem;
-}
+
 a.brand {
   color: bisque;
   font-weight: bold;
@@ -102,16 +96,18 @@ a.brand {
   border-radius: 0.5rem;
   margin: 1rem;
 }
-
+.card-body  {
+  margin-bottom: 1rem;
+}
+.card-body > * {
+  margin-bottom: 0.5rem;
+}
 img {
   border-radius: 0.5rem;
 }
 img.medium {
   max-width: 29rem;
   width: 100%;
-}
-.card-body > * {
-  margin-bottom: 0.5rem;
 }
 
 .price {
@@ -126,3 +122,8 @@ img.medium {
   color: #293B5F;
 }
 
+footer {
+  grid-area: footer;
+  background-color: #B2AB8C;
+  color: #BF1363;
+}
